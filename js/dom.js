@@ -115,3 +115,9 @@ function setNewImage6() {
 function setOldImage6() {
   document.getElementById("bag-3").src = "images/bags/bag-3.png";
 }
+
+// task-9
+const subscribeContainer = document.getElementById("subscribe-container");
+subscribeContainer.addEventListener("dblclick", () => {
+  subscribeContainer.style.backgroundColor = "purple";
+});
