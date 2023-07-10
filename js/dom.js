@@ -61,6 +61,7 @@ buttonBuy6.addEventListener("click", function () {
   buyNowCard6.style.display = "none";
 });
 
+// task-7
 const emailFiledValue = document.getElementById("exampleInputEmail1");
 emailFiledValue.addEventListener("keyup", function (event) {
   const submitButton = document.getElementById("submit-button");
