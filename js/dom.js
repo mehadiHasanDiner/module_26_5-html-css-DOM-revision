@@ -72,3 +72,46 @@ emailFiledValue.addEventListener("keyup", function (event) {
     submitButton.setAttribute("disabled", true);
   }
 });
+
+// task-8
+function setNewImage1() {
+  document.getElementById("shoe-1").src = "images/shoes/shoe-3.png";
+}
+function setOldImage1() {
+  document.getElementById("shoe-1").src = "images/shoes/shoe-1.png";
+}
+
+function setNewImage2() {
+  document.getElementById("shoe-2").src = "images/shoes/shoe-2.png";
+}
+function setOldImage2() {
+  document.getElementById("shoe-2").src = "images/shoes/shoe-3.png";
+}
+
+function setNewImage3() {
+  document.getElementById("shoe-3").src = "images/shoes/shoe-1.png";
+}
+function setOldImage3() {
+  document.getElementById("shoe-3").src = "images/shoes/shoe-2.png";
+}
+
+function setNewImage4() {
+  document.getElementById("bag-1").src = "images/bags/bag-1.png";
+}
+function setOldImage4() {
+  document.getElementById("bag-1").src = "images/bags/bag-2.png";
+}
+
+function setNewImage5() {
+  document.getElementById("bag-2").src = "images/bags/bag-3.png";
+}
+function setOldImage5() {
+  document.getElementById("bag-2").src = "images/bags/bag-1.png";
+}
+
+function setNewImage6() {
+  document.getElementById("bag-3").src = "images/bags/bag-2.png";
+}
+function setOldImage6() {
+  document.getElementById("bag-3").src = "images/bags/bag-3.png";
+}
