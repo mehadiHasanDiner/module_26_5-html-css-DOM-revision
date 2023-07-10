@@ -16,3 +16,9 @@ const cardsClass = document.getElementsByClassName("card");
 for (cards of cardsClass) {
   cards.style.borderRadius = "30px";
 }
+
+// task-5
+const buttonBuy = document.getElementById("button-buy");
+buttonBuy.addEventListener("click", function () {
+  console.log("buttonBuy clicked");
+});
