@@ -18,7 +18,17 @@ for (cards of cardsClass) {
 }
 
 // task-5
-const buttonBuy = document.getElementById("button-buy");
-buttonBuy.addEventListener("click", function () {
+const buttonBuy1 = document.getElementById("button-buy-1");
+buttonBuy1.addEventListener("click", function () {
   console.log("buttonBuy clicked");
+  // task-6
+  const buyNowCard1 = document.getElementById("card-1");
+  buyNowCard1.style.display = "none";
+});
+
+const buttonBuy2 = document.getElementById("button-buy-2");
+buttonBuy2.addEventListener("click", function () {
+  // task-6
+  const buyNowCard2 = document.getElementById("card-2");
+  buyNowCard2.style.display = "none";
 });
