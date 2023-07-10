@@ -60,3 +60,14 @@ buttonBuy6.addEventListener("click", function () {
   const buyNowCard6 = document.getElementById("card-6");
   buyNowCard6.style.display = "none";
 });
+
+const emailFiledValue = document.getElementById("exampleInputEmail1");
+emailFiledValue.addEventListener("keyup", function (event) {
+  const submitButton = document.getElementById("submit-button");
+  const text = event.target.value;
+  if (text === "email") {
+    submitButton.removeAttribute("disabled");
+  } else {
+    submitButton.setAttribute("disabled", true);
+  }
+});
