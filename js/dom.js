@@ -17,49 +17,21 @@ for (cards of cardsClass) {
   cards.style.borderRadius = "30px";
 }
 
-// task-5
-const buttonBuy1 = document.getElementById("button-buy-1");
-buttonBuy1.addEventListener("click", function () {
-  console.log("buttonBuy clicked");
-  // task-6
-  const buyNowCard1 = document.getElementById("card-1");
-  buyNowCard1.style.display = "none";
-});
+// card vanishes
+function updateCardDisplayById(elementId1, elementId2) {
+  const buttonUpdate = document.getElementById(elementId1);
+  buttonUpdate.addEventListener("click", function () {
+    const cardUpdate = document.getElementById(elementId2);
+    cardUpdate.style.display = "none";
+  });
+}
 
-const buttonBuy2 = document.getElementById("button-buy-2");
-buttonBuy2.addEventListener("click", function () {
-  // task-6
-  const buyNowCard2 = document.getElementById("card-2");
-  buyNowCard2.style.display = "none";
-});
-
-const buttonBuy3 = document.getElementById("button-buy-3");
-buttonBuy3.addEventListener("click", function () {
-  // task-6
-  const buyNowCard3 = document.getElementById("card-3");
-  buyNowCard3.style.display = "none";
-});
-
-const buttonBuy4 = document.getElementById("button-buy-4");
-buttonBuy4.addEventListener("click", function () {
-  // task-6
-  const buyNowCard4 = document.getElementById("card-4");
-  buyNowCard4.style.display = "none";
-});
-
-const buttonBuy5 = document.getElementById("button-buy-5");
-buttonBuy5.addEventListener("click", function () {
-  // task-6
-  const buyNowCard5 = document.getElementById("card-5");
-  buyNowCard5.style.display = "none";
-});
-
-const buttonBuy6 = document.getElementById("button-buy-6");
-buttonBuy6.addEventListener("click", function () {
-  // task-6
-  const buyNowCard6 = document.getElementById("card-6");
-  buyNowCard6.style.display = "none";
-});
+updateCardDisplayById("button-buy-1", "card-1");
+updateCardDisplayById("button-buy-2", "card-2");
+updateCardDisplayById("button-buy-3", "card-3");
+updateCardDisplayById("button-buy-4", "card-4");
+updateCardDisplayById("button-buy-5", "card-5");
+updateCardDisplayById("button-buy-6", "card-6");
 
 // task-7
 const emailFiledValue = document.getElementById("exampleInputEmail1");
@@ -72,6 +44,12 @@ emailFiledValue.addEventListener("keyup", function (event) {
     submitButton.setAttribute("disabled", true);
   }
 });
+
+// function setImageToTheCard(elementId, image1, image2) {
+//   const elementProduct = document.getElementById(elementId);
+//   elementProduct.onmouseenter.src = "images/shoes/" + image1 + ".png";
+//   elementProduct.onmouseout.src = "images/shoes/" + image2 + ".png";
+// }
 
 // task-8
 function setNewImage1() {
